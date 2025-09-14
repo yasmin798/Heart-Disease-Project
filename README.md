@@ -91,5 +91,8 @@ Heart_Disease_Project/
 5.Streamlit UI for real-time prediction
 6.Live app deployment via Ngrok
 
+## 📂 GitHub Repository
+Full project available at: [https://github.com/yasmin798/Heart_Disease_Project](https://github.com/yasmin798/Heart_Disease_Project)
+
 
 
