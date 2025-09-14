@@ -1,0 +1,24 @@
+Best Performing Model: Logistic Regression_Grid
+Best Hyperparameters:
+C: 1
+class_weight: None
+dual: False
+fit_intercept: True
+intercept_scaling: 1
+l1_ratio: None
+max_iter: 1000
+multi_class: deprecated
+n_jobs: None
+penalty: l2
+random_state: 42
+solver: liblinear
+tol: 0.0001
+verbose: 0
+warm_start: False
+
+Performance Metrics:
+Accuracy: 0.6230
+Precision: 0.5183
+Recall: 0.6230
+F1-score: 0.5524
+AUC: 0.8648

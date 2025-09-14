@@ -1,0 +1,28 @@
+Logistic Regression Metrics:
+Accuracy: 0.6066
+Precision: 0.5060
+Recall: 0.6066
+F1-score: 0.5428
+AUC: 0.8383
+
+Decision Tree Metrics:
+Accuracy: 0.4590
+Precision: 0.4561
+Recall: 0.4590
+F1-score: 0.4564
+AUC: 0.5363
+
+Random Forest Metrics:
+Accuracy: 0.5082
+Precision: 0.4549
+Recall: 0.5082
+F1-score: 0.4788
+AUC: 0.6901
+
+Support Vector Machine Metrics:
+Accuracy: 0.5574
+Precision: 0.4221
+Recall: 0.5574
+F1-score: 0.4802
+AUC: 0.7898
+

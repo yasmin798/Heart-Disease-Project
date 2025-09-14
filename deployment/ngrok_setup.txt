@@ -1,0 +1,50 @@
+# Ngrok Setup Guide for Streamlit Deployment
+
+This file explains how to deploy the Streamlit app using Ngrok.
+
+## 1. Install Ngrok
+Option A: Install via pip
+    pip install pyngrok
+
+Option B: Download directly from https://ngrok.com/download
+    - Unzip and add ngrok to your system PATH.
+
+## 2. Run the Streamlit App Locally
+Navigate to the project root folder and run:
+    streamlit run ui/app.py
+
+By default, Streamlit runs on: http://localhost:8501
+
+## 3. Start Ngrok
+Open a new terminal and run:
+    ngrok http 8501
+
+Ngrok will generate a public forwarding URL like:
+    Forwarding    https://abc123.ngrok-free.app -> http://localhost:8501
+
+## 4. Share the Public URL
+Copy the HTTPS link and share it for live access to your Streamlit app.
+
+## 5. Optional: Automate Ngrok with Python
+You can create a deploy script to run Streamlit and Ngrok together:
+
+    from pyngrok import ngrok
+    import subprocess
+
+    # Start Streamlit
+    subprocess.Popen(["streamlit", "run", "ui/app.py"])
+
+    # Expose port 8501 with Ngrok
+    public_url = ngrok.connect(8501)
+    print("Public URL:", public_url)
+
+Run it with:
+    python deploy.py
+
+This will launch both the Streamlit app and Ngrok, and display your public link.
+
+---
+Deliverable:
+✔ Publicly accessible Streamlit app via Ngrok link.
+
+Live Link: https://be8f27523a21.ngrok-free.app/
